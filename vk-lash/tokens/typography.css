@@ -1,0 +1,49 @@
+/* VKLD — Typography tokens
+   Display: Cormorant Garamond (elegant high-contrast serif — matches the catalog's
+   "VALORES" / "TÉCNICAS" lettering). Body/UI: Montserrat (clean geometric sans —
+   matches the uppercase service labels & price list).
+   NOTE: original brand fonts were not embedded in the Figma file; these are the
+   closest Google Fonts matches. Swap in licensed brand fonts if available. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Families */
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans:    'Montserrat', system-ui, -apple-system, sans-serif;
+
+  /* Type scale (display uses serif, ui uses sans) */
+  --fs-display-xl: 4.5rem;   /* hero serif */
+  --fs-display-lg: 3.25rem;  /* section title "VALORES" */
+  --fs-display-md: 2.25rem;
+  --fs-display-sm: 1.6rem;
+
+  --fs-xl:   1.5rem;
+  --fs-lg:   1.25rem;
+  --fs-md:   1rem;
+  --fs-base: 0.9375rem;  /* 15px body */
+  --fs-sm:   0.8125rem;
+  --fs-xs:   0.6875rem;
+
+  /* Weights */
+  --fw-light:   300; /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium:  500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:    700; /* @kind font */
+
+  /* Line heights */
+  --lh-tight:   1.05; /* @kind font */
+  --lh-snug:    1.25; /* @kind font */
+  --lh-normal:  1.5; /* @kind font */
+  --lh-relaxed: 1.7; /* @kind font */
+
+  /* Letter spacing — the brand leans on generous tracking for uppercase labels */
+  --ls-tightish: -0.01em; /* @kind font */
+  --ls-normal:   0; /* @kind font */
+  --ls-wide:     0.08em; /* @kind font */
+  --ls-wider:    0.18em;   /* @kind font */
+  --ls-widest:   0.32em;   /* @kind font */
+
+  /* Semantic roles */
+  --text-eyebrow-ls: var(--ls-wider); /* @kind font */
+}

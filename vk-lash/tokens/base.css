@@ -1,0 +1,35 @@
+/* VKLD — base resets & helpers (kept minimal; tokens live in their own files) */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display serif helper */
+.vk-display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-medium);
+  color: var(--text-strong);
+  line-height: var(--lh-tight);
+}
+
+/* Eyebrow / kicker label — the brand's signature tracked uppercase sans */
+.vk-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+a { color: inherit; }
+
+::selection { background: var(--accent-soft); color: var(--ink-900); }

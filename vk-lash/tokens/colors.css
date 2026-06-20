@@ -1,0 +1,62 @@
+/* VKLD — Color tokens
+   Palette sampled from the brand catalog: warm cream, nude/taupe, rose-quartz & rose-gold. */
+:root {
+  /* ── Neutrals: cream → nude → taupe → ink ───────────────────────── */
+  --cream-50:  #FBF6F0;
+  --cream-100: #F6EDE4;  /* page background (sampled) */
+  --cream-200: #EFE2D5;
+  --nude-300:  #E4CDBD;
+  --nude-400:  #DBB9A8;  /* accent bar (sampled) */
+  --taupe-500: #C2A28E;
+  --taupe-600: #9A7B68;
+  --brown-700: #6E564A;
+  --brown-800: #46352D;
+  --ink-900:   #211C19;  /* primary text */
+
+  /* ── Rose quartz / coral (from logo) ────────────────────────────── */
+  --rose-200:  #FFE4E0;
+  --rose-300:  #FFD0CB;
+  --rose-400:  #FFB0AC;  /* signature coral (sampled) */
+  --rose-500:  #E89089;
+  --rose-600:  #C96F68;
+
+  /* ── Rose gold metallic (portrait lettering / logo rim) ─────────── */
+  --gold-300:  #E5CDB9;
+  --gold-400:  #C6AF9E;
+  --gold-500:  #B08D6F;
+  --gold-gradient: linear-gradient(135deg, #E8C4A8 0%, #C98B79 48%, #B2796A 100%); /* @kind color */
+  --rosegold-sheen: linear-gradient(135deg, #F3D9C7 0%, #D89E89 40%, #B97A6A 70%, #E2B49E 100%); /* @kind color */
+
+  /* ── Pure / utility ─────────────────────────────────────────────── */
+  --white:     #FFFFFF;
+  --black:     #1A1512;
+
+  /* ── Functional (WhatsApp / booking) ────────────────────────────── */
+  --whatsapp:       #25D366;
+  --whatsapp-dark:  #1EB456;
+
+  /* ── Semantic aliases ───────────────────────────────────────────── */
+  --surface-page:    var(--cream-100);
+  --surface-raised:  var(--cream-50);
+  --surface-card:    var(--white);
+  --surface-nude:    var(--nude-400);
+  --surface-inverse: var(--ink-900);
+
+  --text-strong:  var(--ink-900);
+  --text-body:    var(--brown-700);
+  --text-muted:   var(--taupe-600);
+  --text-onnude:  var(--brown-800);
+  --text-oninverse: var(--cream-100);
+
+  --accent:        var(--rose-400);
+  --accent-deep:   var(--rose-500);
+  --accent-soft:   var(--rose-200);
+  --accent-gold:   var(--gold-500);
+
+  --border-soft:   #E7D8C9;
+  --border-nude:   var(--nude-300);
+  --divider:       rgba(110, 86, 74, 0.18);
+
+  --focus-ring:    rgba(232, 144, 137, 0.45);
+  --overlay-scrim: rgba(33, 28, 25, 0.45);
+}
