@@ -9,7 +9,7 @@ function Agendamento() {
 
   const send = (e) => {
     e.preventDefault();
-    const text = `Olá, Vitória! 💕 Meu nome é ${form.nome || '...'}.\nGostaria de agendar: ${form.tecnica}.` +
+    const text = `Olá, Vitória! 💕${form.nome ? ` Meu nome é ${form.nome}.` : ''}\nGostaria de agendar: ${form.tecnica}.` +
       (form.data ? `\nPreferência de data: ${form.data}.` : '') +
       (form.msg ? `\nObservação: ${form.msg}` : '');
     window.open(`https://wa.me/${window.VK_PHONE}?text=${encodeURIComponent(text)}`, '_blank');

@@ -89,6 +89,7 @@ function gerarPDF() {
     </html>
   `;
   const janela = window.open('', '_blank');
+  if (!janela) { alert('Permita popups neste site para gerar o PDF.'); return; }
   janela.document.write(conteudo);
   janela.document.close();
   janela.focus();

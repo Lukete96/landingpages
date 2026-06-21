@@ -18,7 +18,7 @@ function Hero() {
             Realce o seu olhar<br />com cílios <span style={{ fontStyle: 'italic', color: 'var(--accent-deep)' }}>sob medida</span>
           </h1>
           <p style={{ margin: '22px 0 0', maxWidth: 460, fontFamily: 'var(--font-sans)', fontWeight: 300, fontSize: '1rem', lineHeight: 1.75, color: 'var(--text-body)' }}>
-            Extensão de cílios, design de sobrancelhas e cuidados faciais com técnica, higiene e um toque de delicadeza. Cada aplicação é pensada para a sua beleza natural.
+            Extensão de cílios e design de sobrancelhas com técnica, higiene e um toque de delicadeza. Cada aplicação é pensada para a sua beleza natural.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 32 }}>
             <WhatsAppButton phone={window.VK_PHONE} size="lg" />
